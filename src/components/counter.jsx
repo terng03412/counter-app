@@ -2,14 +2,22 @@ import React, { Component } from "react"; //impc
 
 class Counter extends Component {
   //cc
+  state = {
+    count: 0
+  };
+
   render() {
     React.createElement("h1");
     return (
-      <React.Fragment>
-        <h1>Hello Wolrd</h1>
+      <div>
+        <span>{this.formatCount()}</span>
         <button>Increment</button>
-      </React.Fragment>
+      </div>
     );
+  }
+  formatCount() {
+    const { count } = this.state;
+    return count === 0 ? "Zero" : count;
   }
 }
 
