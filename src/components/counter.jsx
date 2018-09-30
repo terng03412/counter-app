@@ -2,7 +2,8 @@ import React, { Component } from 'react'; //impc
 
 class Counter extends Component { //cc
     render() { 
-        return <h1>Hello Wolrd</h1>;
+        React.createElement('h1');
+        return <div><h1>Hello Wolrd</h1><button>Increment</button></div> ;
     }
 }
  
